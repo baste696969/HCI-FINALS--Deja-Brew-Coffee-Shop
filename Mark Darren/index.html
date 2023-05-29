@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Shop</title>
+
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+<!-- header section start -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo.png">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#menu">menu</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+ 
+    </nav>
+
+    <div class="icons">
+        <div class="search.png" id="search-button"></div>
+        <a href="#" class="search-button">
+            <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="search.png"></label>
+        </a>
+        <div class="menu.png" id="menu-button"></div>
+        <a href="#" class="menu">
+            <img src="images/menu.png">
+        </a>
+    </div>
+
+</header>
+
+
+<!-- header section end -->
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Welcome to Deja Brew Coffee Shop</h3>
+        <p> <p>We are delighted to have you join us on this incredible coffee adventure.</p>
+        <div class="cart-item">
+            <span class="images/home.jfif"></span>
+        </div>
+        <a href="#" class="button">get yours now</a></p>
+    </div>
+
+</section>
+
+
+<!-- home section ends -->
+
+<!-- menu section starts -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"><span> menu </span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/product 1.jpg" alt="">
+            <h3>Espresso</h3>
+                <p>A strong black coffee brewed by forcing hot water under pressure.</p>
+                <div class="price">₱125.00</div>
+                <a href="#" class="button">buy now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/product 2.jpg" alt="">
+            <h3>Capuccino</h3>
+                <p>Espresso mixed with equal parts of steamed and frothed milk.</p>
+                <div class="price">₱145.00</div>
+                <a href="#" class="button">buy now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/product 3.jpg" alt="">
+            <h3>Mocha</h3>
+                <p>A shot of espresso is combined with a chocolate powder or syrup, followed by milk or cream</p>
+                <div class="price">₱160.00</div>
+                <a href="#" class="button">buy now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/product 4.jpg" alt="">
+            <h3>Latte</h3>
+                <p>Espresso mixed with hot or steamed milk.</p>
+                <div class="price">₱145.00</div>
+                <a href="#" class="button">buy now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu sections ends -->
+
+<section id = "mycart">
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <ul class="cart-items">
+        <!-- Cart items will be added dynamically using JavaScript -->
+      </ul>
+      <p>Total: <span class="total">₱0</span></p>
+      <button class="Checkout">Checkout</button>
+    </div>
+    
+    <div class="overlay">
+      <div class="checkout-form">
+        <h2>Checkout</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+    
+          <label for="address">Address:</label>
+          <textarea id="address" required></textarea>
+    
+          <p>Select Payment Method:</p>
+          <div class="payment-options">
+            <input type="radio" id="gcash" name="payment-method" value="gcash" checked>
+            <label for="gcash">GCash</label>
+    
+            <input type="radio" id="visa" name="payment-method" value="visa">
+            <label for="visa">Visa</label>
+    
+            <input type="radio" id="paypal" name="payment-method" value="paypal">
+            <label for="paypal">PayPal</label>
+          </div>
+    
+          <div class="button-group">
+            <button type="submit">Place Order</button>
+            <button type="button" class="cancel">Cancel</button>
+          </div>
+        
+        </form>
+      </section>
+      </div>
+    </div>
+    
+<!-- about section start -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/about.jpg" alt="">
+            <p>At Deja Brew Coffee Shop, our story is rooted in a deep love
+                 for coffee and a desire to share that passion with the world.</p>>
+            <p>We are passionate about serving high-quality coffee to our customers,</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- contact section starts -->
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns, feel free to contact us.</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts -->
+
+<section class="footer" id="footer">
+
+    <div class="navbar">
+        <a href="#home">home</a>
+        <a href="#menu">menu</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+    </div>
+
+    <p>&copy; @ Deja Brew Coffee Shop. All rights reserved.</p>
+
+</section>
+<!-- footer section ends -->
+
+<!-- custom js file link -->
+<script src="script.js"></script>
+    
+    </body>
+</html>
